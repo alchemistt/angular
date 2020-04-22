@@ -1,0 +1,31 @@
+<div class="assignment1">
+    <div class="alert alert-info">Follow the steps:</div>
+    <ul class="list-group">
+        <li class="list-group-item">Create an input of type "text"</li>
+        <li class="list-group-item">Attach a template reference variable to the input</li>
+        <li class="list-group-item">Attach an "input" event passing in the value of textbox to the handler</li>
+        <li class="list-group-item">Create handler in the component's class</li>
+        <li class="list-group-item">Display the result on the page via string interpolation</li>
+    </ul>
+    <div class="container your-code">
+
+        <form action="/action_page.php">
+            <!-- <label for="fname">First name:</label><br>
+            <input #varr value="tushar" type="text" id="fname" name="fname"><br>
+            <input type="submit" (click)="onClickMe(varr)" value="Submit">
+
+            <h1>{{clickMessage }} </h1>
+  working -->
+
+            <!-- Name: <input #box (keyup)="onKey(box.value)">
+
+            <p>{{value}}</p> -->
+            <!-- <input #box (keyup)="0">
+            <p>{{box.value}}</p> -->
+
+            <input type="text" #dataString (input)="fun($event)"  class="form-control"  placeholder="Write Something"  aria-describedby="button-addon2"  #inp_text>
+
+        </form>
+        <p> {{clickMessage}}</p>
+        <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    </div>
